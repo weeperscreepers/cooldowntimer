@@ -8,7 +8,7 @@ import (
 func TestSum(t *testing.T) {
 
     fmt.Println("testing begins...")
-    cd100 := NewCooldownTimer(100)
+    cd100 := New(100)
 
     fmt.Println("-------- 100 pre-cooldown", cd100)
     cd100.CoolDown(100)
@@ -31,7 +31,7 @@ func TestSum(t *testing.T) {
     }
 
 
-    cd2 := NewCooldownTimer(2);
+    cd2 := New(2);
 
     fmt.Println("-------- 2 pre-cooldown", cd2)
     cd2.CoolDown(3)

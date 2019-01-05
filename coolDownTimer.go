@@ -11,7 +11,7 @@ type CooldownTimer struct{
   GoneOff bool
 }
 
-func NewCooldownTimer(interval float64) *CooldownTimer {
+func New(interval float64) *CooldownTimer {
   return &CooldownTimer{interval, interval, false}
 }
 
